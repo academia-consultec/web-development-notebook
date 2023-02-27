@@ -17,107 +17,114 @@
 <!-- Esta etiqueta representa el cuerpo, el contenido -->
 <!-- que si es visible y mostrado en el navegador -->
 
-<body class="content-body">
+<body>
     <!-- representa la cabecera en el contenido html -->
     <header class="notebook-header">
         <h1 class="content-h1">Notebook de HTML</h1>
     </header>
 
-    <!-- representa los contenedores html -->
+    <div class="content-body">
 
-    <div class="content-box">
-        <!-- representa los titulos en html -->
-        <h2 class="content-h2">Parrafos en HTML</h2>
-        <!-- representa los parrafos html -->
-        <p>Este texto se encuentra dentro de una etiqueta de tipo p</p>
-        <!-- representa los saltos de linea html -->
-    </div>
+        <!-- representa los contenedores html -->
 
-    <div class="content-box">
-        <h2 class="content-h2">Links en HTML</h2>
-        <!-- representa los links html -->
-        <a href="https://www.google.com/?hl=es">Este es un link html</a>
-    </div>
-
-    <div class="content-box">
-        <h2 class="content-h2">Im&aacutegenes en HTML</h2>
-        <!-- representa las imagines html -->
-        <div class="content-box__img--center">
-            <img class="content-img"
-                src="https://www.consultec-ti.com/documents/34960/34964/Consultec_7abr_2022-linkedin.png/76ccd4a2-df97-26e9-43fb-467a847f20cb?version=1.0&t=1650407781587" />
+        <div class="content-box">
+            <!-- representa los titulos en html -->
+            <h2 class="content-h2">Parrafos en HTML</h2>
+            <!-- representa los parrafos html -->
+            <p>Este texto se encuentra dentro de una etiqueta de tipo p</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate felis sed purus pretium ullamcorper. Suspendisse finibus ante consequat, dignissim lectus at, ornare risus. Sed sit amet mi tortor. Pellentesque et elit sed ex elementum sodales nec eu orci. Duis ultricies rhoncus quam in molestie. Mauris vel efficitur dui. Morbi porttitor a nisl et placerat. Sed luctus bibendum tincidunt. Nulla rutrum ligula risus, vel dapibus leo ornare ut.</p>
+            <!-- representa los saltos de linea html -->
         </div>
-    </div>
 
-    <div class="content-box">
-        <h2 class="content-h2">Listas en HTML</h2>
+        <div class="content-box">
+            <h2 class="content-h2">Links en HTML</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate felis sed purus pretium ullamcorper. Suspendisse finibus ante consequat, dignissim lectus at, ornare risus. Sed sit amet mi tortor. Pellentesque et elit sed ex elementum sodales nec eu orci. Duis ultricies rhoncus quam in molestie. Mauris vel efficitur dui. Morbi porttitor a nisl et placerat. Sed luctus bibendum tincidunt. Nulla rutrum ligula risus, vel dapibus leo ornare ut.</p>
+            <!-- representa los links html -->
+            <a href="https://www.google.com/?hl=es">Este es un link html</a>
+        </div>
 
-        <h3 class="content-h3">Listas puntuadas</h3>
-        <ul>
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-        </ul>
+        <div class="content-box content-box__img">
+            <h2 class="content-h2">Im&aacutegenes en HTML</h2>
+            <!-- representa las imagines html -->
+            <div class="content-box__img--center">
+                <img class="content-img"
+                    src="https://www.consultec-ti.com/documents/34960/34964/Consultec_7abr_2022-linkedin.png/76ccd4a2-df97-26e9-43fb-467a847f20cb?version=1.0&t=1650407781587" />
+            </div>
+        </div>
 
-        <h3 class="content-h3">Listas enumeradas</h3>
-        <ol>
-            <li>item enumerado 1</li>
-            <li>item enumerado 2</li>
-            <li>item enumerado 3</li>
-        </ol>
-    </div>
+        <div class="content-box">
+            <h2 class="content-h2">Listas en HTML</h2>
 
-    <div class="content-box">
-        <!-- Tablas en HTML -->
-        <h2 class="content-h2">Tablas en HTML</h2>
-        <table>
-            <tr>
-                <th>Developer</th>
-                <th>Edad</th>
-                <th>Seniority</th>
-            </tr>
-            <tr>
-                <td>Emil</td>
-                <td>20</td>
-                <td>Junior</td>
-            </tr>
-            <tr>
-                <td>Javier</td>
-                <td>25</td>
-                <td>Semi Sr</td>
-            </tr>
-            <tr>
-                <td>Jacobo</td>
-                <td>28</td>
-                <td>Senior</td>
-            </tr>
-        </table>
-    </div>
+            <h3 class="content-h3">Listas puntuadas</h3>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
 
-    <div class="content-box">
-        <!-- Botones en HTML -->
-        <h2 class="content-h2">Botones en HTML</h2>
-        <button>Presiona Aqui</button>
-    </div>
+            <h3 class="content-h3">Listas enumeradas</h3>
+            <ol>
+                <li>item enumerado 1</li>
+                <li>item enumerado 2</li>
+                <li>item enumerado 3</li>
+            </ol>
+        </div>
 
-    <div class="content-box">
-        <!-- Formulario en HTML -->
-        <h2 class="content-h2">Formularios HTML</h2>
-        <form class="content-box__form">
-            <label class="form-label" for="fname">Nombre completo:</label>
-            <input type="text" id="fname" name="fname"><br>
+        <div class="content-box">
+            <!-- Tablas en HTML -->
+            <h2 class="content-h2">Tablas en HTML</h2>
+            <table>
+                <tr>
+                    <th>Developer</th>
+                    <th>Edad</th>
+                    <th>Seniority</th>
+                </tr>
+                <tr>
+                    <td>Emil</td>
+                    <td>20</td>
+                    <td>Junior</td>
+                </tr>
+                <tr>
+                    <td>Javier</td>
+                    <td>25</td>
+                    <td>Semi Sr</td>
+                </tr>
+                <tr>
+                    <td>Jacobo</td>
+                    <td>28</td>
+                    <td>Senior</td>
+                </tr>
+            </table>
+        </div>
 
-            <input type="radio" id="html" name="fav_language" value="HTML">
-            <label class="form-label" for="html">HTML</label><br>
-            <input type="radio" id="css" name="fav_language" value="CSS">
-            <label class="form-label" for="css">CSS</label><br>
-            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-            <label class="form-label" for="javascript">JavaScript</label><br>
+        <div class="content-box">
+            <!-- Botones en HTML -->
+            <h2 class="content-h2">Botones en HTML</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vulputate felis sed purus pretium ullamcorper. Suspendisse finibus ante consequat, dignissim lectus at, ornare risus. Sed sit amet mi tortor. Pellentesque et elit sed ex elementum sodales nec eu orci. Duis ultricies rhoncus quam in molestie. Mauris vel efficitur dui. Morbi porttitor a nisl et placerat. Sed luctus bibendum tincidunt. Nulla rutrum ligula risus, vel dapibus leo ornare ut.</p>
+            
+            <button>Presiona Aqui</button>
+        </div>
 
-            <input type="checkbox" id="checkbox" name="question" value="learning_question">
-            <label class="form-label" for="vehicle3">Estoy aprendiendo con este curso?</label><br>
+        <div class="content-box">
+            <!-- Formulario en HTML -->
+            <h2 class="content-h2">Formularios HTML</h2>
+            <form class="content-box__form">
+                <label class="form-label" for="fname">Nombre completo:</label>
+                <input type="text" id="fname" name="fname"><br>
 
-            <input type="submit" value="Enviar Formulario">
-        </form>
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label class="form-label" for="html">HTML</label><br>
+                <input type="radio" id="css" name="fav_language" value="CSS">
+                <label class="form-label" for="css">CSS</label><br>
+                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                <label class="form-label" for="javascript">JavaScript</label><br>
+
+                <input type="checkbox" id="checkbox" name="question" value="learning_question">
+                <label class="form-label" for="vehicle3">Estoy aprendiendo con este curso?</label><br>
+
+                <input type="submit" value="Enviar Formulario">
+            </form>
+        </div>
     </div>
 
     <!-- representa pie de pagina en el contenido html -->

@@ -1,15 +1,25 @@
+body {
+    background-color: white;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="submit"] {
+    margin-top: 1.5em;
+}
+
 .notebook-header {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.content-body {
-    background-color: white;
-}
-
 .content-h1 {
-    color : #226666;
+    color: #226666;
 }
 
 .content-h2 {
@@ -24,14 +34,29 @@
     color: #2D882D;
 }
 
-footer {
+.content-body {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    margin: 0em 10% 0em 10%;
 }
 
 .content-img {
-    width: 750px;
+    width: 90%;
+}
+
+.content-box {
+    width: 40%;
+    margin: 1em 5% 0em 5%;
+}
+
+.content-box__img {
+    width: 100%;
+}
+
+.content-box__img>.content-h2 {
+    text-align: center;
 }
 
 .content-box__img--center {
@@ -40,15 +65,18 @@ footer {
     justify-content: center;
 }
 
-.content-box {
-    margin-left: 5em;
-    margin-right: 5em;
-}
-
 .content-box__form {
     margin: 2.5em 5em 2.5em 5em;
 }
 
-input[type="submit"] {
-    margin-top: 1.5em;
+@media only screen and (max-width: 720px) {
+
+    .content-h2 {
+        text-align: center;
+    }
+
+    .content-box {
+        width: 100%;
+        margin: 2em 5% 2em 5%;
+    }
 }
