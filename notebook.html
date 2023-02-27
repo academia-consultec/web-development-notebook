@@ -13,36 +13,36 @@
     </head>
     <!-- Esta etiqueta representa el cuerpo, el contenido -->
     <!-- que si es visible y mostrado en el navegador -->
-    <body>
+    <body class="content-body">
         <!-- representa la cabecera en el contenido html -->
-        <header>
-            Titulo
+        <header class="notebook-header">
+            <h1 class="content-h1">Notebook de HTML</h1>
         </header>
         <!-- representa los contenedores html -->
         <div>
             <!-- representa los titulos en html -->
-            <h1>Parrafos en HTML</h1>
+            <h2 class="content-h2">Parrafos en HTML</h2>
             <!-- representa los parrafos html -->
             <p>Este texto se encuentra dentro de una etiqueta de tipo p</p>
             <!-- representa los saltos de linea html -->
             <br/>
-            <h2>Links en HTML</h2>
+            <h2 class="content-h2">Links en HTML</h2>
             <!-- representa los links html -->
             <a href="https://www.google.com/?hl=es">Este es un link html</a>
             <br/>
-            <h2>Im&aacutegenes en HTML</h2>
+            <h2 class="content-h2">Im&aacutegenes en HTML</h2>
             <!-- representa las imagines html -->
             <img src="https://www.consultec-ti.com/documents/34960/34964/Consultec_7abr_2022-linkedin.png/76ccd4a2-df97-26e9-43fb-467a847f20cb?version=1.0&t=1650407781587"/>
             <br/>
 
-            <h2>Listas en HTML</h2>
-            <h3>Listas puntuadas</h3>
+            <h2 class="content-h2">Listas en HTML</h2>
+            <h3 class="content-h3">Listas puntuadas</h3>
             <ul>
                 <li>item 1</li>
                 <li>item 2</li>
                 <li>item 3</li>
             </ul>
-            <h3>Listas enumeradas</h3>
+            <h3 class="content-h3">Listas enumeradas</h3>
             <ol>
                 <li>item enumerado 1</li>
                 <li>item enumerado 2</li>
@@ -50,7 +50,7 @@
             </ol>
 
             <!-- Tablas en HTML -->
-            <h2>Tablas en HTML</h2>
+            <h2 class="content-h2">Tablas en HTML</h2>
             <table>
                 <tr>
                     <th>Developer</th>
@@ -75,24 +75,24 @@
             </table>
 
             <!-- Botones en HTML -->
-            <h2>Botones en HTML</h2>
+            <h2 class="content-h2">Botones en HTML</h2>
             <button>Presiona Aqui</button>
 
             <!-- Formulario en HTML -->
-            <h2>Formularios HTML</h2>
+            <h2 class="content-h2">Formularios HTML</h2>
             <form>
-                <label for="fname">Nombre completo:</label>
+                <label class="form-label" for="fname">Nombre completo:</label>
                 <input type="text" id="fname" name="fname"><br>
 
                 <input type="radio" id="html" name="fav_language" value="HTML">
-                <label for="html">HTML</label><br>
+                <label class="form-label" for="html">HTML</label><br>
                 <input type="radio" id="css" name="fav_language" value="CSS">
-                <label for="css">CSS</label><br>
+                <label class="form-label" for="css">CSS</label><br>
                 <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                <label for="javascript">JavaScript</label><br>
+                <label class="form-label" for="javascript">JavaScript</label><br>
 
                 <input type="checkbox" id="checkbox" name="question" value="learning_question">
-                <label for="vehicle3">Estoy aprendiendo con este curso?</label><br>
+                <label class="form-label" for="vehicle3">Estoy aprendiendo con este curso?</label><br>
 
                 <input type="submit" value="Enviar Formulario">
             </form>

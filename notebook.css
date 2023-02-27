@@ -1,19 +1,31 @@
-body {
+.notebook-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-body {
     background-color: white;
 }
 
-h1 {
+.content-h1 {
     color : #226666;
 }
 
-h2 {
+.content-h2 {
     color: #AA6C39;
 }
 
-h3 {
+.content-h3 {
     color: #D46A6A;
 }
 
-label {
+.form-label {
     color: #2D882D;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
