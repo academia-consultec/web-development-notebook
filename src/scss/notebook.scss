@@ -1,5 +1,11 @@
+$color_1: #226666;
+$color_2: #AA6C39;
+$color_3: #D46A6A;
+$color_4: #2D882D;
+$background-color_1: white;
+
 body {
-    background-color: white;
+    background-color: $background-color_1;
 }
 
 footer {
@@ -19,19 +25,19 @@ input[type="submit"] {
 }
 
 .content-h1 {
-    color: #226666;
+    color: $color_1;
 }
 
 .content-h2 {
-    color: #AA6C39;
+    color: $color_2;
 }
 
 .content-h3 {
-    color: #D46A6A;
+    color: $color_3;
 }
 
 .form-label {
-    color: #2D882D;
+    color: $color_4;
 }
 
 .content-body {
@@ -53,10 +59,10 @@ input[type="submit"] {
 
 .content-box__img {
     width: 100%;
-}
 
-.content-box__img>.content-h2 {
-    text-align: center;
+    >.content-h2 {
+        text-align: center;
+    }
 }
 
 .content-box__img--center {
@@ -70,7 +76,6 @@ input[type="submit"] {
 }
 
 @media only screen and (max-width: 720px) {
-
     .content-h2 {
         text-align: center;
     }
