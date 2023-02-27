@@ -29,3 +29,26 @@ footer {
     align-items: center;
     justify-content: center;
 }
+
+.content-img {
+    width: 750px;
+}
+
+.content-box__img--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-box {
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.content-box__form {
+    margin: 2.5em 5em 2.5em 5em;
+}
+
+input[type="submit"] {
+    margin-top: 1.5em;
+}
