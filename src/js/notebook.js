@@ -10,24 +10,20 @@ window.addEventListener('DOMContentLoaded', () => {
     const principalItem = document.getElementById('header');
     const secundaryItem = document.getElementById('image');
 
-    const handleMouseOut = (targetItem) => {
-        targetItem.style.color = '#226666';
+    const eventHandler = (targetItem, color) => {
+        targetItem.style.color = color;
     }
 
     // indicamos que cambie el color cuando el mouse esta sobre el item
-    principalItem.addEventListener('mouseover', function handleMouseOver() {
-        principalItem.style.color = 'red';
-    });
+    principalItem.addEventListener('mouseover', () => eventHandler(principalItem, 'red'));
 
     // indicamos que recupere el color cuando el mouse no esta sobre el item
-    principalItem.addEventListener('mouseout', () => handleMouseOut(principalItem));
+    principalItem.addEventListener('mouseout', () => eventHandler(principalItem, '#226666'));
 
     // indicamos que cambie el color cuando el mouse esta sobre el item
-    secundaryItem.addEventListener('mouseover', function handleMouseOverOnImage() {
-        principalItem.style.color = '#D46A6A';
-    });
+    secundaryItem.addEventListener('mouseover', () => eventHandler(principalItem, '#D46A6A'));
 
     // indicamos que recupere el color cuando el mouse no esta sobre el item
-    secundaryItem.addEventListener('mouseout', () => handleMouseOut(principalItem));
+    secundaryItem.addEventListener('mouseout', () => eventHandler(principalItem, '#226666'));
 
 });
