@@ -1,0 +1,87 @@
+$color_1: #226666;
+$color_2: #AA6C39;
+$color_3: #D46A6A;
+$color_4: #2D882D;
+$background-color_1: white;
+
+body {
+    background-color: $background-color_1;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="submit"] {
+    margin-top: 1.5em;
+}
+
+.notebook-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-h1 {
+    color: $color_1;
+}
+
+.content-h2 {
+    color: $color_2;
+}
+
+.content-h3 {
+    color: $color_3;
+}
+
+.form-label {
+    color: $color_4;
+}
+
+.content-body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    margin: 0em 10% 0em 10%;
+}
+
+.content-img {
+    width: 90%;
+}
+
+.content-box {
+    width: 40%;
+    margin: 1em 5% 0em 5%;
+}
+
+.content-box__img {
+    width: 100%;
+
+    >.content-h2 {
+        text-align: center;
+    }
+}
+
+.content-box__img--center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-box__form {
+    margin: 2.5em 5em 2.5em 5em;
+}
+
+@media only screen and (max-width: 720px) {
+    .content-h2 {
+        text-align: center;
+    }
+
+    .content-box {
+        width: 100%;
+        margin: 2em 5% 2em 5%;
+    }
+}

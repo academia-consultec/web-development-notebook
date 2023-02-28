@@ -1,0 +1,26 @@
+{
+  "name": "web-development-notebook",
+  "version": "1.0.0",
+  "description": "My web development notebook",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css:scss": "node-sass --output-style compressed -o dist src/scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/academia-consultec/web-development-notebook.git"
+  },
+  "keywords": [
+    "notebook"
+  ],
+  "author": "Alexander Diaz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/academia-consultec/web-development-notebook/issues"
+  },
+  "homepage": "https://github.com/academia-consultec/web-development-notebook#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
