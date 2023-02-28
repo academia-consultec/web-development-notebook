@@ -7,28 +7,27 @@ function sayHello() {
 // solventa el error de carga cuando el DOM no esta listo
 window.addEventListener('DOMContentLoaded', () => {
 
-    const principalHeader = document.getElementById('header');
+    const principalItem = document.getElementById('header');
+    const secundaryItem = document.getElementById('image');
+
+    const handleMouseOut = (targetItem) => {
+        targetItem.style.color = '#226666';
+    }
 
     // indicamos que cambie el color cuando el mouse esta sobre el item
-    principalHeader.addEventListener('mouseover', function handleMouseOver() {
-        principalHeader.style.color = 'red';
+    principalItem.addEventListener('mouseover', function handleMouseOver() {
+        principalItem.style.color = 'red';
     });
 
     // indicamos que recupere el color cuando el mouse no esta sobre el item
-    principalHeader.addEventListener('mouseout', function handleMouseOut() {
-        principalHeader.style.color = '#226666';
-    });
-
-    const secundaryItem = document.getElementById('image');
+    principalItem.addEventListener('mouseout', () => handleMouseOut(principalItem));
 
     // indicamos que cambie el color cuando el mouse esta sobre el item
     secundaryItem.addEventListener('mouseover', function handleMouseOverOnImage() {
-        principalHeader.style.color = '#D46A6A';
+        principalItem.style.color = '#D46A6A';
     });
 
     // indicamos que recupere el color cuando el mouse no esta sobre el item
-    secundaryItem.addEventListener('mouseout', function handleMouseOutOnImage() {
-        principalHeader.style.color = '#226666';
-    });
+    secundaryItem.addEventListener('mouseout', () => handleMouseOut(principalItem));
 
 });
