@@ -1,11 +1,11 @@
-$color_1: #226666;
-$color_2: #AA6C39;
-$color_3: #D46A6A;
-$color_4: #2D882D;
-$background-color_1: white;
+$principal: #226666;
+$secondary: #AA6C39;
+$tertiary: #D46A6A;
+$quaternary: #2D882D;
+$background-principal: white;
 
 body {
-    background-color: $background-color_1;
+    background-color: $background-principal;
 }
 
 footer {
@@ -25,19 +25,19 @@ input[type="submit"] {
 }
 
 .content-h1 {
-    color: $color_1;
+    color: $principal;
 }
 
 .content-h2 {
-    color: $color_2;
+    color: $secondary;
 }
 
 .content-h3 {
-    color: $color_3;
+    color: $tertiary;
 }
 
 .form-label {
-    color: $color_4;
+    color: $quaternary;
 }
 
 .content-body {
