@@ -22,5 +22,8 @@
   "homepage": "https://github.com/academia-consultec/web-development-notebook#readme",
   "devDependencies": {
     "node-sass": "^8.0.0"
+  },
+  "dependencies": {
+    "http-server": "^14.1.1"
   }
 }
